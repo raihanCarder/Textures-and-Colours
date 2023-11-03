@@ -82,17 +82,18 @@ namespace Textures_and_Colours
             _spriteBatch.Draw(bowserTexture, new Vector2(870, 180), Color.White); // Default Color of Image is White
             _spriteBatch.Draw(marioTexture, new Vector2(1, 225), Color.White);
 
-            for (int i = 420; i < 650; i+= 90)
+            for (int i = 420; i < 650; i+= goombaTexture.Width)
             {
                 _spriteBatch.Draw(goombaTexture, new Vector2(i, 342), Color.White);
             }
 
             for (int g = 200; g < 300; g+= 50)
             {
-                for (int i = 450; i < 650; i += 50)
+                for (int i = 450; i < 650; i += coinTexture.Width)
                 {
                     _spriteBatch.Draw(coinTexture, new Vector2(i, g), Color.White);
                 }
+
             }
             
 
